@@ -1,0 +1,30 @@
+{
+  "name": "angular-js-mbta",
+  "version": "0.1.0",
+  "description": "Yet another amazing AngularJS app",
+  "keywords": [
+    "angular"
+  ],
+  "homepage": "https://github.com/sbhosale/angular-js-mbta",
+  "bugs": "https://github.com/sbhosale/angular-js-mbta/issues",
+  "author": {
+    "name": "Sushant Bhosale",
+    "email": "",
+    "url": "https://github.com/sbhosale"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sbhosale/angular-js-mbta.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.4",
+    "angular-animate": "^1.4.0-rc.0",
+    "angular-route": "^1.4.0-rc.0",
+    "angular": "^1.4.0-rc.0"
+  }
+}
