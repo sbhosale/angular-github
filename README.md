@@ -1,6 +1,6 @@
-# AngularJsMbta
+# Angular Github API
 
-Yet another amazing AngularJS app
+A simple app that uses Github API
 
 ## Getting Started
 
