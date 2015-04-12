@@ -6,20 +6,23 @@ angular.module('sbhosale.AngularJsMbta', ['ngAnimate', 'ngRoute'])
 
   .config(function($locationProvider, $routeProvider) {
 
-    $locationProvider.html5Mode(false);
+    $locationProvider.html5Mode(true);
 
     $routeProvider
       .when('/', {
-        templateUrl: 'views/home.html'
+        templateUrl: 'views/main.html',
+        controller: 'MainController'
       })
-      .when('/features', {
-        templateUrl: 'views/features.html'
+      .when('/user/:username', {
+        templateUrl: 'views/user.html',
+        controller: 'UserController'
       })
-      .when('/contact', {
-        templateUrl: 'views/contact.html'
+      .when('/repo/:username/:reponame', {
+        templateUrl: 'views/repo.html',
+        controller: 'RepoController'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/main'
       });
 
   });
