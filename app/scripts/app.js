@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sbhosale.AngularJsMbta', ['ngAnimate', 'ngRoute'])
+angular.module('github', ['ngRoute'])
 
   .constant('version', 'v0.1.0')
 
