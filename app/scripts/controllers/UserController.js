@@ -10,14 +10,12 @@ var UserController = function($scope, $log, $routeParams, githubService){
 
 	var onUserSuccess = function(data){
 		$scope.user = data;
-		$log.info($scope.user);
 		githubService.getRepos($scope.user)
 			.then(onRepos, onErrorRepo);
 	};
 
 	var onRepos = function(data){
 		$scope.repos = data;
-		$log.info($scope.repos);
 	};
 
 	var onError = function(reason){
