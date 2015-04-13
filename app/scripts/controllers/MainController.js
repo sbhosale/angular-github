@@ -1,10 +1,15 @@
-'use strict';
+var app = angular.module('github');
 
-angular.module('github')
+var MainController = function($scope, $log, $location){
 
-  .controller('MainController', function($scope, $location, version) {
+	$scope.search = function(username){
+		$log.info("I am in search. Searching for " + username);
+		$location.path('/user/' + username);
+		//$scope.$reload();
+		
+	}
 
-    $scope.$path = $location.path.bind($location);
-    $scope.version = version;
+	$scope.username = 'angular';
+}
 
-  });
+app.controller("MainController", ["$scope", "$log", "$location", MainController]);

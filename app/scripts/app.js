@@ -4,9 +4,9 @@ angular.module('github', ['ngRoute'])
 
   .constant('version', 'v0.1.0')
 
-  .config(function($locationProvider, $routeProvider) {
+  .config(function( $routeProvider) {
 
-    $locationProvider.html5Mode(true);
+    //$locationProvider.html5Mode(false);
 
     $routeProvider
       .when('/', {
@@ -22,7 +22,7 @@ angular.module('github', ['ngRoute'])
         controller: 'RepoController'
       })
       .otherwise({
-        redirectTo: '/main'
+        redirectTo: '/'
       });
 
   });

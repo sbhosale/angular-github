@@ -1,6 +1,5 @@
-'use strict';
 
-var github = function($http){
+var githubService = function($http){
 
 	var getUser = function(username){
 		return $http.get("https://api.github.com/users/" + username)
@@ -16,7 +15,7 @@ var github = function($http){
 			})
 	};
 
-	var gerRepoIssueCount = function(username, reponame){
+	var getRepoIssueCount = function(username, reponame){
 		return $http.get("http://api.github.com/repos/" + username + '/' + reponame)
 			.then(function(response){
 				return response.data;
@@ -38,7 +37,9 @@ var github = function($http){
 		getContributors: getContributors
 	};
 
+	
+}
+
 	var app = angular.module('github');
 
-	app.factory("github", github);
-}
+	app.factory("githubService", githubService);
