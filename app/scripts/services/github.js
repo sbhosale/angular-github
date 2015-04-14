@@ -9,7 +9,7 @@ var githubService = function($http){
 	};
 
 	var getRepos = function(user){
-		return $http.get(user.respos_url)
+		return $http.get(user.repos_url)
 			.then(function(response){
 				return response.data;
 			})

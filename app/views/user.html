@@ -1,13 +1,12 @@
-<div> 
-  <h2>{{ user.name }}</h2>
-  {{ error }}
-  <img ng-hide="!user" ng-src='http://www.gravatar.com/avatar/{{ user.gravatar_id }}' title="{{ person.firstName }} {{ person.lastName }}" />
+  <div style="text-align: left">
+  <p>{{ error }}</p>
+  <p><img ng-hide="!user" ng-src='http://www.gravatar.com/avatar/{{ user.gravatar_id }}' title="{{ person.firstName }} {{ person.lastName }}" /></p>
 Order:
 <select ng-model="repoSortOrder">
   <option value="+name">Name</option>
   <option value="-stargazers_count">Stars</option>
   <option value="+language">Language</option>
-</select></div>
+</select>
 
 <table>
   <thead>
@@ -23,4 +22,7 @@ Order:
     <td>{{ repo.language }}</td>
   </tr>
 </table>
+<br />
 <a href="#main">Back to Search</a>
+
+</div>

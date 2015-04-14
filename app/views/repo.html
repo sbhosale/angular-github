@@ -1,0 +1,20 @@
+<div style="text-align: left">  
+  <table>
+    <thead>
+      <tr>
+        <td>Login</td>
+        <td>Avatar</td>
+        <td>Contributions</td>
+      </tr>
+    </thead>
+    <tr ng-repeat="person in contributors">
+      <td>{{ person.login }}</td>
+      <td><img ng-src="{{ person.avatar_url }}" width="150" height="150" /></td>
+      <td>{{ person.contributions }}</td>
+    </tr>
+  </table>
+</div>
+
+
+<br />
+<a href="#main">Back to Search</a>

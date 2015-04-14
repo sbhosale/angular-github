@@ -1,4 +1,5 @@
 <form name="searchUser" ng-submit="search(username)">
-	<input type="text" required placeholder="Enter Username to Search" ng-model="username"/>
+	<label for="username">Enter username</label>
+	<input name="username" type="text" required placeholder="Enter Username to Search" ng-model="username"/>
 	<input type="submit" value="Search" />
 </form>
